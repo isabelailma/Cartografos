@@ -12,12 +12,18 @@
   </h1>
   <p>Cartógrafo</p>
   <p>Título</p>
+  <select name="mapa" id="mapa" onchange="selecionarMapa()">
+    <option value="A">Ermos (A)</option>
+    <option value="B">Abismo (B)</option>
+    <option value="C">Ermos (C)</option>
+    <option value="D">Abismo (D)</option>
+  </select>
   <div class="linha">
-    <div class="espaço forest" onclick="selecionarTipoTerreno('forest')"></div>
-    <div class="espaço village" onclick="selecionarTipoTerreno('village')"></div>
-    <div class="espaço farm" onclick="selecionarTipoTerreno('farm')"></div>
-    <div class="espaço water" onclick="selecionarTipoTerreno('water')"></div>
-    <div class="espaço monster" onclick="selecionarTipoTerreno('monster')"></div>
+    <div class="espaço tipo floresta" onclick="selecionarTipoTerreno(this, 'floresta')"></div>
+    <div class="espaço tipo aldeia" onclick="selecionarTipoTerreno(this, 'aldeia')"></div>
+    <div class="espaço tipo fazenda" onclick="selecionarTipoTerreno(this, 'fazenda')"></div>
+    <div class="espaço tipo água" onclick="selecionarTipoTerreno(this, 'água')"></div>
+    <div class="espaço tipo monstro" onclick="selecionarTipoTerreno(this, 'monstro')"></div>
   </div>
 
   <div class="linha" id="linhaA">
@@ -164,5 +170,6 @@
     <div id="K11" class="espaço" onclick="desenhar(this)"></div>
   </div>
 </body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="script.js"></script>
 </html>

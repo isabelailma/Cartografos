@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +7,23 @@
   outline: 0;
 }
 
+h1 {
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
-  background-color:#F2F2F2;
+  background-color:#EDDECC;
+}
+
+.linha {
+  display: flex;
+}
+
+.tipo:hover {
+  opacity: 50%;
+  cursor: pointer;
 }
 
 .espaço {
@@ -15,36 +32,55 @@ body {
   border: 1px dashed;
 }
 
-.water {
-  background-image: url(img/01_water.png);
+.selecionado {
+  border: red solid;
+  opacity: 50%;
+}
+
+.água {
+  background-image: url(img/água.png);
   background-position: center;
   background-size: 136%;
 }
 
-.farm {
-  background-image: url(img/02_farm.png);
+.fazenda {
+  background-image: url(img/fazenda.png);
   background-position: center;
   background-size: 136%;
 }
 
-.village {
-  background-image: url(img/03_village.png);
+.aldeia {
+  background-image: url(img/aldeia.png);
   background-position: center;
   background-size: 136%;
 }
 
-.forest {
-  background-image: url(img/04_forest.png);
+.floresta {
+  background-image: url(img/floresta.png);
   background-position: center;
   background-size: 136%;
 }
 
-.monster {
-  background-image: url(img/05_monster.png);
+.monstro {
+  background-image: url(img/monstro.png);
   background-position: center;
   background-size: 136%;
 }
 
-.linha {
-  display: flex;
+.montanha {
+  background-image: url(img/montanha.png);
+  background-position: center;
+  background-size: 136%;
+}
+
+.ruína {
+  background-image: url(img/ruína.png);
+  background-position: center;
+  background-size: 100%;
+}
+
+.abismo {
+  background-image: url(img/abismo.png);
+  background-position: center;
+  background-size: 136%;
 }
