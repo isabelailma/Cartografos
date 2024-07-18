@@ -1,0 +1,104 @@
+{
+  "cilada": [],
+  "exploração": [],
+  "estação": [],
+  "decreto": [],
+  "pontuação": [
+    {
+      "número": 26,
+      "nome": "Bosque Sentinela",
+      "descrição": "Ganhe uma estrela de reputação por espaço de floresta adjacente à borda do mapa.",
+      "flavor text": "Druidas plantaram essas imponentes fileiras para nos proteger de algo além dos campos selvagens."
+    },
+    {
+      "número": 27,
+      "nome": "Ramos Verdes",
+      "descrição": "Ganhe uma estrela de reputação por linha e coluna com pelo menos um espaço de floresta. O mesmo espaço de floresta pode ser pontuado em uma linha e uma coluna.",
+      "flavor text": "Eu mapeei desertos. É mais fácil inspecionar florestas e muito mais agradável fazer pausas na sombra."
+    },
+    {
+      "número": 28,
+      "nome": "Torre da Árvore",
+      "descrição": "Ganhe uma estrela de reputação por espaço de floresta cercado nos quatro lados por espaços preenchidos ou pelas bordas do mapa.",
+      "flavor text": "Sob o dossel, longe do céu azul brilhante, todas as trilhas conduziram através de espinhos e sombras suspeitas."
+    },
+    {
+      "número": 29,
+      "nome": "Floresta de Encosta",
+      "descrição": "Ganhe três estrelas de reputação por espaço de montanha conectado a outro espaço de montanha por um grupo de espaços de floresta.",
+      "flavor text": "Montanhas são pontos de referência nítidos, ilhas em um amplo mar de árvores, mas o trabalho de um cartógrafo é mapear todas as trilhas escondidas nessas profundezas."
+    },
+    {
+      "número": 30,
+      "nome": "Canal",
+      "descrição": "Ganhe uma estrela de reputação por espaço de água adjacente a pelo menos um espaço de fazenda e uma estrela de reputação por espaço de fazenda adjacente a pelo menos um espaço de água.",
+      "flavor text": "Caminhos decorados com pedras coloridas cobriam os canais ao longo das plantações de cada família. Um pouco de beleza entre o trabalho do campo."
+    },
+    {
+      "número": 31,
+      "nome": "Vale dos Magos",
+      "descrição": "Ganhe duas estrelas de reputação por espaço de água adjacente a um espaço de montanha e uma estrela de reputação por espaço de fazenda adjacente a um espaço de montanha.",
+      "flavor text": "Os magos escolheram cuidadosamente habitar os altos vales, escondidos de olhos curiosos, mas férteis o bastante para que sua estranha colheita prosperasse."
+    },
+    {
+      "número": 32,
+      "nome": "Celeiro Dourado",
+      "descrição": "Ganhe uma estrela de reputação por espaço de água adjacente a um espaço de ruínas e três estrelas de reputação por espaço de fazenda em um espaço de ruínas.",
+      "flavor text": "As histórias dizem que há muito tempo este lugar alimentou um império. Agora nada cresce nas areias que sopram entre as ruínas."
+    },
+    {
+      "número": 33,
+      "nome": "Extensão da Costa",
+      "descrição": "Ganhe três estrelas de reputação por grupo de espaços de fazenda não adjacente a um espaço de água ou à borda do mapa e três estrelas de reputação por grupo de espaços de água não adjacente a um espaço de fazenda ou à borda do mapa.",
+      "flavor text": "Um verdadeiro cartógrafo sabe como usar um teodolito em rochas e jangadas. Você não pode parar de desenhas a linha só porque o terrenho acaba."
+    },
+    {
+      "número": 34,
+      "nome": "Vilarejos Selvagens",
+      "descrição": "Ganhe oito estrelas de reputação por grupo de seis ou mais espaços de aldeia.",
+      "flavor text": "Tinha de haver seis em um grupo para granhar uma marcação no meu mapa, o suficiente para justificar que a rainha despachasse a justiça... ou um coletor de impostos."
+    },
+    {
+      "número": 35,
+      "nome": "Metrópole",
+      "descrição": "Ganhe uma estrela de reputação por espaço de aldeia no maior grupo de espaços de aldeia que não seja adjacente a um espaço de montanha.",
+      "flavor text": "Neste imenso ninho de intrigas onde as guildas perseguem antigas vinganças, a rainha quimará seus venenos ou governará sobre suas cinzas."
+    },
+    {
+      "número": 36,
+      "nome": "Planícies Auspiciosas",
+      "descrição": "Ganhe três estrelas de reputação por grupo de espaços de aldeia adjacente a três ou mais tipos diferentes de terreno.",
+      "flavor text": "Há muito tempo nós éramos uma terra de errantes. Mas quando as pessoas criaram raízes, elas fizeram isso de maneira inteligente, perto de tudo que precisavam."
+    },
+    {
+      "número": 37,
+      "nome": "Cidadela",
+      "descrição": "Ganhe duas estrelas de reputação por espaço de aldeia no segundo maior grupo de espaços de aldeia.",
+      "flavor text": "As paredes da estaca percorriam caminhos entre as aldeias e os habitantes se apressaram em defender uns aos outros quando os clãs selvagens retornaram."
+    },
+    {
+      "número": 38,
+      "nome": "Fronteiras",
+      "descrição": "Ganhe seis estrelas de reputação por linha completa ou coluna completa de espaços preenchidos.",
+      "flavor text": "Uma vez distantes da borda do mapa, agora essas terras estão diretamente sobre ela. Algum dia nossa próxima expedição começará aqui."
+    },
+    {
+      "número": 39,
+      "nome": "Baronato Perdido",
+      "descrição": "Ganhe três estrelas de reputação por espaço ao longo da borda do maior quadrado de espaços preenchidos.",
+      "flavor text": "Linhas em um mapa podem não definir a lealdade dessas pessoas fortemente independentes..."
+    },
+    {
+      "número": 40,
+      "nome": "Estrada Partida",
+      "descrição": "Ganhe três estrelas de reputação por linha diagonal completa de espaços preenchidos que tocam as bordas esquerda e inferior do mapa.",
+      "flavor text": "O que é mais incrível: os séculos de trabalho que foram necessários para construir esses caminhos pavimentados ou a precisão que os tornou tão retos?"
+    },
+    {
+      "número": 41,
+      "nome": "Caldeirões",
+      "descrição": "Ganhe uma estrela de reputação por espaço vazio cercado nos quatro lados por espaços preenchidos ou pela borda do mapa.",
+      "flavor text": "Por gerações eles viveram nas terras vizinhas, mas nenhum ousou explorar as sinistras fendas no solo."
+    }
+  ]
+}
