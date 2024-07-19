@@ -3,171 +3,177 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="./img/favicon.svg">
   <link rel="stylesheet" href="global.css">
   <title>Cartógrafos</title>
 </head>
 <body>
-  <h1>
-    <div>Cartógrafos</div>
-  </h1>
-  <p>Cartógrafo</p>
-  <p>Título</p>
-  <select name="mapa" id="mapa" onchange="selecionarMapa()">
-    <option value="A">Ermos (A)</option>
-    <option value="B">Abismo (B)</option>
-    <option value="C">Ermos (C)</option>
-    <option value="D">Abismo (D)</option>
-  </select>
-  <div class="linha">
-    <div class="espaço tipo floresta" onclick="selecionarTipoTerreno(this, 'floresta')"></div>
-    <div class="espaço tipo aldeia" onclick="selecionarTipoTerreno(this, 'aldeia')"></div>
-    <div class="espaço tipo fazenda" onclick="selecionarTipoTerreno(this, 'fazenda')"></div>
-    <div class="espaço tipo água" onclick="selecionarTipoTerreno(this, 'água')"></div>
-    <div class="espaço tipo monstro" onclick="selecionarTipoTerreno(this, 'monstro')"></div>
-  </div>
-
-  <div class="linha" id="linhaA">
-    <div id="A1" class="espaço" onclick="desenhar(this)"></div>
-    <div id="A2" class="espaço" onclick="desenhar(this)"></div>
-    <div id="A3" class="espaço" onclick="desenhar(this)"></div>
-    <div id="A4" class="espaço" onclick="desenhar(this)"></div>
-    <div id="A5" class="espaço" onclick="desenhar(this)"></div>
-    <div id="A6" class="espaço" onclick="desenhar(this)"></div>
-    <div id="A7" class="espaço" onclick="desenhar(this)"></div>
-    <div id="A8" class="espaço" onclick="desenhar(this)"></div>
-    <div id="A9" class="espaço" onclick="desenhar(this)"></div>
-    <div id="A10" class="espaço" onclick="desenhar(this)"></div>
-    <div id="A11" class="espaço" onclick="desenhar(this)"></div>
-  </div>
-  <div class="linha" id="linhaB">
-    <div id="B1" class="espaço" onclick="desenhar(this)"></div>
-    <div id="B2" class="espaço" onclick="desenhar(this)"></div>
-    <div id="B3" class="espaço" onclick="desenhar(this)"></div>
-    <div id="B4" class="espaço" onclick="desenhar(this)"></div>
-    <div id="B5" class="espaço" onclick="desenhar(this)"></div>
-    <div id="B6" class="espaço" onclick="desenhar(this)"></div>
-    <div id="B7" class="espaço" onclick="desenhar(this)"></div>
-    <div id="B8" class="espaço" onclick="desenhar(this)"></div>
-    <div id="B9" class="espaço" onclick="desenhar(this)"></div>
-    <div id="B10" class="espaço" onclick="desenhar(this)"></div>
-    <div id="B11" class="espaço" onclick="desenhar(this)"></div>
-  </div>
-  <div class="linha" id="linhaC">
-    <div id="C1" class="espaço" onclick="desenhar(this)"></div>
-    <div id="C2" class="espaço" onclick="desenhar(this)"></div>
-    <div id="C3" class="espaço" onclick="desenhar(this)"></div>
-    <div id="C4" class="espaço" onclick="desenhar(this)"></div>
-    <div id="C5" class="espaço" onclick="desenhar(this)"></div>
-    <div id="C6" class="espaço" onclick="desenhar(this)"></div>
-    <div id="C7" class="espaço" onclick="desenhar(this)"></div>
-    <div id="C8" class="espaço" onclick="desenhar(this)"></div>
-    <div id="C9" class="espaço" onclick="desenhar(this)"></div>
-    <div id="C10" class="espaço" onclick="desenhar(this)"></div>
-    <div id="C11" class="espaço" onclick="desenhar(this)"></div>
-  </div>
-  <div class="linha" id="linhaD">
-    <div id="D1" class="espaço" onclick="desenhar(this)"></div>
-    <div id="D2" class="espaço" onclick="desenhar(this)"></div>
-    <div id="D3" class="espaço" onclick="desenhar(this)"></div>
-    <div id="D4" class="espaço" onclick="desenhar(this)"></div>
-    <div id="D5" class="espaço" onclick="desenhar(this)"></div>
-    <div id="D6" class="espaço" onclick="desenhar(this)"></div>
-    <div id="D7" class="espaço" onclick="desenhar(this)"></div>
-    <div id="D8" class="espaço" onclick="desenhar(this)"></div>
-    <div id="D9" class="espaço" onclick="desenhar(this)"></div>
-    <div id="D10" class="espaço" onclick="desenhar(this)"></div>
-    <div id="D11" class="espaço" onclick="desenhar(this)"></div>
-  </div>
-  <div class="linha" id="linhaE">
-    <div id="E1" class="espaço" onclick="desenhar(this)"></div>
-    <div id="E2" class="espaço" onclick="desenhar(this)"></div>
-    <div id="E3" class="espaço" onclick="desenhar(this)"></div>
-    <div id="E4" class="espaço" onclick="desenhar(this)"></div>
-    <div id="E5" class="espaço" onclick="desenhar(this)"></div>
-    <div id="E6" class="espaço" onclick="desenhar(this)"></div>
-    <div id="E7" class="espaço" onclick="desenhar(this)"></div>
-    <div id="E8" class="espaço" onclick="desenhar(this)"></div>
-    <div id="E9" class="espaço" onclick="desenhar(this)"></div>
-    <div id="E10" class="espaço" onclick="desenhar(this)"></div>
-    <div id="E11" class="espaço" onclick="desenhar(this)"></div>
-  </div>
-  <div class="linha" id="linhaF">
-    <div id="F1" class="espaço" onclick="desenhar(this)"></div>
-    <div id="F2" class="espaço" onclick="desenhar(this)"></div>
-    <div id="F3" class="espaço" onclick="desenhar(this)"></div>
-    <div id="F4" class="espaço" onclick="desenhar(this)"></div>
-    <div id="F5" class="espaço" onclick="desenhar(this)"></div>
-    <div id="F6" class="espaço" onclick="desenhar(this)"></div>
-    <div id="F7" class="espaço" onclick="desenhar(this)"></div>
-    <div id="F8" class="espaço" onclick="desenhar(this)"></div>
-    <div id="F9" class="espaço" onclick="desenhar(this)"></div>
-    <div id="F10" class="espaço" onclick="desenhar(this)"></div>
-    <div id="F11" class="espaço" onclick="desenhar(this)"></div>
-  </div>
-  <div class="linha" id="linhaG">
-    <div id="G1" class="espaço" onclick="desenhar(this)"></div>
-    <div id="G2" class="espaço" onclick="desenhar(this)"></div>
-    <div id="G3" class="espaço" onclick="desenhar(this)"></div>
-    <div id="G4" class="espaço" onclick="desenhar(this)"></div>
-    <div id="G5" class="espaço" onclick="desenhar(this)"></div>
-    <div id="G6" class="espaço" onclick="desenhar(this)"></div>
-    <div id="G7" class="espaço" onclick="desenhar(this)"></div>
-    <div id="G8" class="espaço" onclick="desenhar(this)"></div>
-    <div id="G9" class="espaço" onclick="desenhar(this)"></div>
-    <div id="G10" class="espaço" onclick="desenhar(this)"></div>
-    <div id="G11" class="espaço" onclick="desenhar(this)"></div>
-  </div>
-  <div class="linha" id="linhaH">
-    <div id="H1" class="espaço" onclick="desenhar(this)"></div>
-    <div id="H2" class="espaço" onclick="desenhar(this)"></div>
-    <div id="H3" class="espaço" onclick="desenhar(this)"></div>
-    <div id="H4" class="espaço" onclick="desenhar(this)"></div>
-    <div id="H5" class="espaço" onclick="desenhar(this)"></div>
-    <div id="H6" class="espaço" onclick="desenhar(this)"></div>
-    <div id="H7" class="espaço" onclick="desenhar(this)"></div>
-    <div id="H8" class="espaço" onclick="desenhar(this)"></div>
-    <div id="H9" class="espaço" onclick="desenhar(this)"></div>
-    <div id="H10" class="espaço" onclick="desenhar(this)"></div>
-    <div id="H11" class="espaço" onclick="desenhar(this)"></div>
-  </div>
-  <div class="linha" id="linhaI">
-    <div id="I1" class="espaço" onclick="desenhar(this)"></div>
-    <div id="I2" class="espaço" onclick="desenhar(this)"></div>
-    <div id="I3" class="espaço" onclick="desenhar(this)"></div>
-    <div id="I4" class="espaço" onclick="desenhar(this)"></div>
-    <div id="I5" class="espaço" onclick="desenhar(this)"></div>
-    <div id="I6" class="espaço" onclick="desenhar(this)"></div>
-    <div id="I7" class="espaço" onclick="desenhar(this)"></div>
-    <div id="I8" class="espaço" onclick="desenhar(this)"></div>
-    <div id="I9" class="espaço" onclick="desenhar(this)"></div>
-    <div id="I10" class="espaço" onclick="desenhar(this)"></div>
-    <div id="I11" class="espaço" onclick="desenhar(this)"></div>
-  </div>
-  <div class="linha" id="linhaJ">
-    <div id="J1" class="espaço" onclick="desenhar(this)"></div>
-    <div id="J2" class="espaço" onclick="desenhar(this)"></div>
-    <div id="J3" class="espaço" onclick="desenhar(this)"></div>
-    <div id="J4" class="espaço" onclick="desenhar(this)"></div>
-    <div id="J5" class="espaço" onclick="desenhar(this)"></div>
-    <div id="J6" class="espaço" onclick="desenhar(this)"></div>
-    <div id="J7" class="espaço" onclick="desenhar(this)"></div>
-    <div id="J8" class="espaço" onclick="desenhar(this)"></div>
-    <div id="J9" class="espaço" onclick="desenhar(this)"></div>
-    <div id="J10" class="espaço" onclick="desenhar(this)"></div>
-    <div id="J11" class="espaço" onclick="desenhar(this)"></div>
-  </div>
-  <div class="linha" id="linhaK">
-    <div id="K1" class="espaço" onclick="desenhar(this)"></div>
-    <div id="K2" class="espaço" onclick="desenhar(this)"></div>
-    <div id="K3" class="espaço" onclick="desenhar(this)"></div>
-    <div id="K4" class="espaço" onclick="desenhar(this)"></div>
-    <div id="K5" class="espaço" onclick="desenhar(this)"></div>
-    <div id="K6" class="espaço" onclick="desenhar(this)"></div>
-    <div id="K7" class="espaço" onclick="desenhar(this)"></div>
-    <div id="K8" class="espaço" onclick="desenhar(this)"></div>
-    <div id="K9" class="espaço" onclick="desenhar(this)"></div>
-    <div id="K10" class="espaço" onclick="desenhar(this)"></div>
-    <div id="K11" class="espaço" onclick="desenhar(this)"></div>
+  <div id="root">
+    <div class="conteúdo">
+      <h1>
+        <div>Cartógrafos</div>
+      </h1>
+      <p>Cartógrafo</p>
+      <p>Título</p>
+      <select name="mapa" id="mapa" onchange="selecionarMapa()">
+        <option value="A">Ermos (A)</option>
+        <option value="B">Abismo (B)</option>
+        <option value="C">Ermos (C)</option>
+        <option value="D">Abismo (D)</option>
+      </select>
+      <div class="linha">
+        <div class="espaço tipo floresta" onclick="selecionarTipoTerreno(this, 'floresta')"></div>
+        <div class="espaço tipo aldeia" onclick="selecionarTipoTerreno(this, 'aldeia')"></div>
+        <div class="espaço tipo fazenda" onclick="selecionarTipoTerreno(this, 'fazenda')"></div>
+        <div class="espaço tipo água" onclick="selecionarTipoTerreno(this, 'água')"></div>
+        <div class="espaço tipo monstro" onclick="selecionarTipoTerreno(this, 'monstro')"></div>
+      </div>
+      <div class="áreaMapa">
+        <div class="linha">
+          <div id="A1" class="espaço" onclick="desenhar(this)"></div>
+          <div id="A2" class="espaço" onclick="desenhar(this)"></div>
+          <div id="A3" class="espaço" onclick="desenhar(this)"></div>
+          <div id="A4" class="espaço" onclick="desenhar(this)"></div>
+          <div id="A5" class="espaço" onclick="desenhar(this)"></div>
+          <div id="A6" class="espaço" onclick="desenhar(this)"></div>
+          <div id="A7" class="espaço" onclick="desenhar(this)"></div>
+          <div id="A8" class="espaço" onclick="desenhar(this)"></div>
+          <div id="A9" class="espaço" onclick="desenhar(this)"></div>
+          <div id="A10" class="espaço" onclick="desenhar(this)"></div>
+          <div id="A11" class="espaço" onclick="desenhar(this)"></div>
+        </div>
+        <div class="linha">
+          <div id="B1" class="espaço" onclick="desenhar(this)"></div>
+          <div id="B2" class="espaço" onclick="desenhar(this)"></div>
+          <div id="B3" class="espaço" onclick="desenhar(this)"></div>
+          <div id="B4" class="espaço" onclick="desenhar(this)"></div>
+          <div id="B5" class="espaço" onclick="desenhar(this)"></div>
+          <div id="B6" class="espaço" onclick="desenhar(this)"></div>
+          <div id="B7" class="espaço" onclick="desenhar(this)"></div>
+          <div id="B8" class="espaço" onclick="desenhar(this)"></div>
+          <div id="B9" class="espaço" onclick="desenhar(this)"></div>
+          <div id="B10" class="espaço" onclick="desenhar(this)"></div>
+          <div id="B11" class="espaço" onclick="desenhar(this)"></div>
+        </div>
+        <div class="linha">
+          <div id="C1" class="espaço" onclick="desenhar(this)"></div>
+          <div id="C2" class="espaço" onclick="desenhar(this)"></div>
+          <div id="C3" class="espaço" onclick="desenhar(this)"></div>
+          <div id="C4" class="espaço" onclick="desenhar(this)"></div>
+          <div id="C5" class="espaço" onclick="desenhar(this)"></div>
+          <div id="C6" class="espaço" onclick="desenhar(this)"></div>
+          <div id="C7" class="espaço" onclick="desenhar(this)"></div>
+          <div id="C8" class="espaço" onclick="desenhar(this)"></div>
+          <div id="C9" class="espaço" onclick="desenhar(this)"></div>
+          <div id="C10" class="espaço" onclick="desenhar(this)"></div>
+          <div id="C11" class="espaço" onclick="desenhar(this)"></div>
+        </div>
+        <div class="linha">
+          <div id="D1" class="espaço" onclick="desenhar(this)"></div>
+          <div id="D2" class="espaço" onclick="desenhar(this)"></div>
+          <div id="D3" class="espaço" onclick="desenhar(this)"></div>
+          <div id="D4" class="espaço" onclick="desenhar(this)"></div>
+          <div id="D5" class="espaço" onclick="desenhar(this)"></div>
+          <div id="D6" class="espaço" onclick="desenhar(this)"></div>
+          <div id="D7" class="espaço" onclick="desenhar(this)"></div>
+          <div id="D8" class="espaço" onclick="desenhar(this)"></div>
+          <div id="D9" class="espaço" onclick="desenhar(this)"></div>
+          <div id="D10" class="espaço" onclick="desenhar(this)"></div>
+          <div id="D11" class="espaço" onclick="desenhar(this)"></div>
+        </div>
+        <div class="linha">
+          <div id="E1" class="espaço" onclick="desenhar(this)"></div>
+          <div id="E2" class="espaço" onclick="desenhar(this)"></div>
+          <div id="E3" class="espaço" onclick="desenhar(this)"></div>
+          <div id="E4" class="espaço" onclick="desenhar(this)"></div>
+          <div id="E5" class="espaço" onclick="desenhar(this)"></div>
+          <div id="E6" class="espaço" onclick="desenhar(this)"></div>
+          <div id="E7" class="espaço" onclick="desenhar(this)"></div>
+          <div id="E8" class="espaço" onclick="desenhar(this)"></div>
+          <div id="E9" class="espaço" onclick="desenhar(this)"></div>
+          <div id="E10" class="espaço" onclick="desenhar(this)"></div>
+          <div id="E11" class="espaço" onclick="desenhar(this)"></div>
+        </div>
+        <div class="linha">
+          <div id="F1" class="espaço" onclick="desenhar(this)"></div>
+          <div id="F2" class="espaço" onclick="desenhar(this)"></div>
+          <div id="F3" class="espaço" onclick="desenhar(this)"></div>
+          <div id="F4" class="espaço" onclick="desenhar(this)"></div>
+          <div id="F5" class="espaço" onclick="desenhar(this)"></div>
+          <div id="F6" class="espaço" onclick="desenhar(this)"></div>
+          <div id="F7" class="espaço" onclick="desenhar(this)"></div>
+          <div id="F8" class="espaço" onclick="desenhar(this)"></div>
+          <div id="F9" class="espaço" onclick="desenhar(this)"></div>
+          <div id="F10" class="espaço" onclick="desenhar(this)"></div>
+          <div id="F11" class="espaço" onclick="desenhar(this)"></div>
+        </div>
+        <div class="linha">
+          <div id="G1" class="espaço" onclick="desenhar(this)"></div>
+          <div id="G2" class="espaço" onclick="desenhar(this)"></div>
+          <div id="G3" class="espaço" onclick="desenhar(this)"></div>
+          <div id="G4" class="espaço" onclick="desenhar(this)"></div>
+          <div id="G5" class="espaço" onclick="desenhar(this)"></div>
+          <div id="G6" class="espaço" onclick="desenhar(this)"></div>
+          <div id="G7" class="espaço" onclick="desenhar(this)"></div>
+          <div id="G8" class="espaço" onclick="desenhar(this)"></div>
+          <div id="G9" class="espaço" onclick="desenhar(this)"></div>
+          <div id="G10" class="espaço" onclick="desenhar(this)"></div>
+          <div id="G11" class="espaço" onclick="desenhar(this)"></div>
+        </div>
+        <div class="linha">
+          <div id="H1" class="espaço" onclick="desenhar(this)"></div>
+          <div id="H2" class="espaço" onclick="desenhar(this)"></div>
+          <div id="H3" class="espaço" onclick="desenhar(this)"></div>
+          <div id="H4" class="espaço" onclick="desenhar(this)"></div>
+          <div id="H5" class="espaço" onclick="desenhar(this)"></div>
+          <div id="H6" class="espaço" onclick="desenhar(this)"></div>
+          <div id="H7" class="espaço" onclick="desenhar(this)"></div>
+          <div id="H8" class="espaço" onclick="desenhar(this)"></div>
+          <div id="H9" class="espaço" onclick="desenhar(this)"></div>
+          <div id="H10" class="espaço" onclick="desenhar(this)"></div>
+          <div id="H11" class="espaço" onclick="desenhar(this)"></div>
+        </div>
+        <div class="linha">
+          <div id="I1" class="espaço" onclick="desenhar(this)"></div>
+          <div id="I2" class="espaço" onclick="desenhar(this)"></div>
+          <div id="I3" class="espaço" onclick="desenhar(this)"></div>
+          <div id="I4" class="espaço" onclick="desenhar(this)"></div>
+          <div id="I5" class="espaço" onclick="desenhar(this)"></div>
+          <div id="I6" class="espaço" onclick="desenhar(this)"></div>
+          <div id="I7" class="espaço" onclick="desenhar(this)"></div>
+          <div id="I8" class="espaço" onclick="desenhar(this)"></div>
+          <div id="I9" class="espaço" onclick="desenhar(this)"></div>
+          <div id="I10" class="espaço" onclick="desenhar(this)"></div>
+          <div id="I11" class="espaço" onclick="desenhar(this)"></div>
+        </div>
+        <div class="linha">
+          <div id="J1" class="espaço" onclick="desenhar(this)"></div>
+          <div id="J2" class="espaço" onclick="desenhar(this)"></div>
+          <div id="J3" class="espaço" onclick="desenhar(this)"></div>
+          <div id="J4" class="espaço" onclick="desenhar(this)"></div>
+          <div id="J5" class="espaço" onclick="desenhar(this)"></div>
+          <div id="J6" class="espaço" onclick="desenhar(this)"></div>
+          <div id="J7" class="espaço" onclick="desenhar(this)"></div>
+          <div id="J8" class="espaço" onclick="desenhar(this)"></div>
+          <div id="J9" class="espaço" onclick="desenhar(this)"></div>
+          <div id="J10" class="espaço" onclick="desenhar(this)"></div>
+          <div id="J11" class="espaço" onclick="desenhar(this)"></div>
+        </div>
+        <div class="linha">
+          <div id="K1" class="espaço" onclick="desenhar(this)"></div>
+          <div id="K2" class="espaço" onclick="desenhar(this)"></div>
+          <div id="K3" class="espaço" onclick="desenhar(this)"></div>
+          <div id="K4" class="espaço" onclick="desenhar(this)"></div>
+          <div id="K5" class="espaço" onclick="desenhar(this)"></div>
+          <div id="K6" class="espaço" onclick="desenhar(this)"></div>
+          <div id="K7" class="espaço" onclick="desenhar(this)"></div>
+          <div id="K8" class="espaço" onclick="desenhar(this)"></div>
+          <div id="K9" class="espaço" onclick="desenhar(this)"></div>
+          <div id="K10" class="espaço" onclick="desenhar(this)"></div>
+          <div id="K11" class="espaço" onclick="desenhar(this)"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

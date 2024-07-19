@@ -4,8 +4,16 @@
 * {
   margin: 0;
   padding: 0;
-  border: 0;
-  outline: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:#f0f0f5;
+  -webkit-font-smoothing: antialiased;
+  align-items: center;
+  margin: 20px 20px;
 }
 
 h1 {
@@ -13,10 +21,23 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-size: 50px;
+  background: -webkit-linear-gradient(#FF8A00, #DC8240);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-body {
-  background-color:#EDDECC;
+.conteúdo {
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 100%;
+  padding: 20px 50px;
+}
+
+.áreaMapa {
+  min-width: 550px;
+  max-width: 550px;
+  background: #EDDECC;
 }
 
 .linha {
@@ -29,9 +50,10 @@ body {
 }
 
 .espaço {
-  width: 30px;
-  height: 30px;
-  border: 1px dashed;
+  min-width: 50px;
+  min-height: 50px;
+  border: thin dashed;
+  border-color: #DC8240;
 }
 
 .selecionado {
@@ -75,8 +97,14 @@ body {
   background-size: 136%;
 }
 
-.ruína {
-  background-image: url(img/ruína.png);
+.ruínaLaranja {
+  background-image: url(img/ruínaLaranja.png);
+  background-position: center;
+  background-size: 125%;
+}
+
+.ruínaBranca {
+  background-image: url(img/ruínaBranca.png);
   background-position: center;
   background-size: 100%;
 }

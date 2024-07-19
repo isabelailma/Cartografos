@@ -54,7 +54,7 @@ function desenharMontanhas(item) {
 }
 
 function desenharRuínas(item) {
-  document.getElementById(item).innerHTML = '<div class="espaço ruína"></div>';
+  document.getElementById(item).innerHTML = '<div style="border:none" class="espaço ruínaLaranja"></div>';
 }
 
 function limparMapa() {
